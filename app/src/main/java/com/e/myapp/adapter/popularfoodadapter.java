@@ -28,7 +28,7 @@ public class popularfoodadapter extends RecyclerView.Adapter<popularfoodadapter.
         this.foodlist = foodlist;
     }
 
-    public static final class PopularFoodViewholder extends ViewHolder{
+         public static final class PopularFoodViewholder extends RecyclerView.ViewHolder{
 
 
             ImageView foodimage;
@@ -47,7 +47,7 @@ public class popularfoodadapter extends RecyclerView.Adapter<popularfoodadapter.
     @NonNull
     @Override
     public PopularFoodViewholder onCreateViewHolder ( @NonNull ViewGroup parent, int viewType ) {
-        View view= LayoutInflater.from(context).inflate(R.layout.popular_food_row,parent);
+        View view= LayoutInflater.from(context).inflate(R.layout.popular_food_row,parent,false);
         return new PopularFoodViewholder(view);
     }
 
