@@ -9,7 +9,7 @@ public class popularfood {
         return name;
     }
 
-    public String getImage () {
+    public int getImage () {
         return image;
     }
 
