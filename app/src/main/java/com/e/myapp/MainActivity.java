@@ -6,15 +6,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.e.myapp.adapter.availableadapter;
 import com.e.myapp.adapter.popularfoodadapter;
+import com.e.myapp.model.availablefood;
 import com.e.myapp.model.popularfood;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    RecyclerView pr;
+    RecyclerView pr,ar;
     popularfoodadapter popularfoodadapter;
+    availableadapter  Availableadapter;
     @Override
     protected void onCreate ( Bundle savedInstanceState ) {
         super.onCreate(savedInstanceState);
@@ -32,6 +35,28 @@ public class MainActivity extends AppCompatActivity {
         pfl.add(new popularfood ("ugali ",R.drawable.pic2,"80"));
         pfl.add(new popularfood ("rice",R.drawable.pic3,"80"));
         setPopularrecycler(pfl);
+
+
+
+
+        List<availablefood> afl =new ArrayList<>();
+        afl.add(new availablefood ("chapati",R.drawable.pic1,"80"));
+        afl.add(new availablefood ("ugali ",R.drawable.pic2,"80"));
+        afl.add(new availablefood ("rice",R.drawable.pic3,"80"));
+        afl.add(new availablefood ("chapati",R.drawable.pic1,"80"));
+        afl.add(new availablefood ("ugali ",R.drawable.pic2,"80"));
+        afl.add(new availablefood ("rice",R.drawable.pic3,"80"));
+        afl.add(new availablefood ("chapati",R.drawable.pic1,"80"));
+        afl.add(new availablefood ("ugali ",R.drawable.pic2,"80"));
+        afl.add(new availablefood ("rice",R.drawable.pic3,"80"));
+        setAvailablerecycler(afl);
+
+
+
+
+
+
+
     }
 
 
@@ -48,6 +73,16 @@ public class MainActivity extends AppCompatActivity {
     pr.setLayoutManager(layoutManager);
     popularfoodadapter =new popularfoodadapter(this,popularrecycler);
     pr.setAdapter(popularfoodadapter);
+
+    }
+
+    public void setAvailablerecycler ( List<availablefood> popularrecycler ){
+        ar=  findViewById(R.id.available);
+
+        RecyclerView.LayoutManager layoutManager =new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
+        ar.setLayoutManager(layoutManager);
+        Availableadapter =new availableadapter(this,popularrecycler);
+        pr.setAdapter(popularfoodadapter);
 
     }
 }
