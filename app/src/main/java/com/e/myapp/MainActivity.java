@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager =new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
         ar.setLayoutManager(layoutManager);
         Availableadapter =new availableadapter(this,popularrecycler);
-        pr.setAdapter(Availableadapter);
+        ar.setAdapter(Availableadapter);
 
     }
 }

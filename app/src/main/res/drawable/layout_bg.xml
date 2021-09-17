@@ -3,10 +3,10 @@
 <corners android:bottomLeftRadius="40dp"
     android:topLeftRadius="40dp"
     android:bottomRightRadius="40dp"
-    android:topRightRadius="40dp"
+
     />
     <stroke android:color="@color/black" android:width="1dp"/>
-<gradient android:startColor="@color/purple_200"
+<gradient android:startColor="@color/purple_500"
     android:endColor="@color/blue"/>
 
 </shape>
