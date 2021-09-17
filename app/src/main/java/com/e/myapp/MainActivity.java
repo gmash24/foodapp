@@ -25,15 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
         // now we will bind data to the adapter class
         List<popularfood> pfl =new ArrayList<>();
-        pfl.add(new popularfood ("chapati",R.drawable.pic1,"80"));
-        pfl.add(new popularfood ("ugali ",R.drawable.pic2,"80"));
-        pfl.add(new popularfood ("rice",R.drawable.pic3,"80"));
-        pfl.add(new popularfood ("chapati",R.drawable.pic1,"80"));
-        pfl.add(new popularfood ("ugali ",R.drawable.pic2,"80"));
-        pfl.add(new popularfood ("rice",R.drawable.pic3,"80"));
-        pfl.add(new popularfood ("chapati",R.drawable.pic1,"80"));
-        pfl.add(new popularfood ("ugali ",R.drawable.pic2,"80"));
-        pfl.add(new popularfood ("rice",R.drawable.pic3,"80"));
+        pfl.add(new popularfood ("chapati","80",R.drawable.pic1));
+        pfl.add(new popularfood ("ugali ","80",R.drawable.pic2));
+        pfl.add(new popularfood ("rice","80",R.drawable.pic3));
+        pfl.add(new popularfood ("chapati","80",R.drawable.pic1));
+        pfl.add(new popularfood ("ugali ","80",R.drawable.pic2));
+        pfl.add(new popularfood ("rice","80",R.drawable.pic3));
+        pfl.add(new popularfood ("chapati","80",R.drawable.pic1));
+        pfl.add(new popularfood ("ugali ","80",R.drawable.pic2));
+        pfl.add(new popularfood ("rice","80",R.drawable.pic3));
         setPopularrecycler(pfl);
 
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         afl.add(new availablefood ("rice",R.drawable.pic3,"80"));
         afl.add(new availablefood ("chapati",R.drawable.pic1,"80"));
         afl.add(new availablefood ("ugali ",R.drawable.pic2,"80"));
-        afl.add(new availablefood ("rice",R.drawable.pic3,"80"));
+
         setAvailablerecycler(afl);
 
 

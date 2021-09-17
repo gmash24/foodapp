@@ -27,7 +27,7 @@ public class availableadapter extends RecyclerView.Adapter<availableadapter.Popu
         this.foodlist = foodlist;
     }
 
-         public static final class PopularFoodViewholder extends ViewHolder{
+         public static final class PopularFoodViewholder extends RecyclerView.ViewHolder{
 
 
             ImageView foodimage;
@@ -61,6 +61,7 @@ public class availableadapter extends RecyclerView.Adapter<availableadapter.Popu
 
     @Override
     public int getItemCount () {
+
         return foodlist.size();
     }
 

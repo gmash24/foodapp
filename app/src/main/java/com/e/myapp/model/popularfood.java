@@ -30,7 +30,7 @@ public class popularfood {
         this.price = price;
     }
 
-    public popularfood ( String name, Integer image, String price ) {
+    public popularfood ( String name,  String price,Integer image) {
         this.name = name;
         this.image = image;
         this.price = price;

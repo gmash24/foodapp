@@ -6,6 +6,12 @@ public class availablefood {
     String price;
 
 
+    public availablefood ( String name, Integer image, String price ) {
+        this.name = name;
+        this.image = image;
+        this.price = price;
+    }
+
     public String getName () {
         return name;
     }
@@ -30,11 +36,7 @@ public class availablefood {
         this.price = price;
     }
 
-    public availablefood ( String name, Integer image, String price ) {
-        this.name = name;
-        this.image = image;
-        this.price = price;
-    }
+
 
 
 
